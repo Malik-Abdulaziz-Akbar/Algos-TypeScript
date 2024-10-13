@@ -1,4 +1,4 @@
-const subsetSum = (arr: number[], sum: number): boolean => {
+export const subsetSum = (arr: number[], sum: number): boolean => {
     const n = arr.length
     const dp: boolean[][] = new Array(n + 1).fill(false).map(
         () => new Array(sum + 1).fill(false));
@@ -21,9 +21,9 @@ const subsetSum = (arr: number[], sum: number): boolean => {
 }
 
 
-const set = [3, 34, 4, 12, 5, 2]
-const sum1 = 9
-const sum2 = 30
+// const set = [3, 34, 4, 12, 5, 2]
+// const sum1 = 9
+// const sum2 = 30
 
-console.log(`Subset for ${sum1} is`, subsetSum(set, sum1))
-console.log(`Subset for ${sum2} is`, subsetSum(set, sum2))
+// console.log(`Subset for ${sum1} is`, subsetSum(set, sum1))
+// console.log(`Subset for ${sum2} is`, subsetSum(set, sum2))
